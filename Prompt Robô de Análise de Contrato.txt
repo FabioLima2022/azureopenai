@@ -1,0 +1,57 @@
+Prompt: Robô de Análise de Contratos
+Objetivo:
+Desenvolver um robô inteligente capaz de analisar contratos de prestação de serviços, identificar cláusulas críticas, apontar riscos potenciais e sugerir melhorias. O robô deve ser intuitivo, eficiente e gerar relatórios completos para facilitar a revisão de contratos.
+
+Funcionalidades Principais:
+Upload de Documentos:
+
+Suporte para formatos PDF, Word (DOCX) e Texto (TXT).
+Implementação de OCR para documentos escaneados usando Tesseract.
+Processamento de Contratos:
+
+Extração de texto e divisão do conteúdo em cláusulas utilizando marcadores como "CLÁUSULA", "ITEM" ou números sequenciais.
+Identificação e categorização automática de cláusulas importantes:
+Objeto do contrato.
+Prazos.
+Pagamentos.
+Multas e rescisão.
+Sigilo/confidencialidade.
+Foro e jurisdição.
+Análise de Riscos:
+
+Detecção de termos problemáticos ou vagos, como:
+"A critério exclusivo."
+"Indefinido."
+Ausência de prazos ou valores.
+Comparação com boas práticas contratuais.
+Relatório Detalhado:
+
+Resumo das cláusulas encontradas e classificadas.
+Lista de riscos detectados com explicações detalhadas.
+Sugestões de melhorias com base nas melhores práticas jurídicas.
+Interface do Usuário:
+
+Área para upload do contrato.
+Exibição dos resultados de forma clara:
+Resumo em tabelas.
+Destaques de cláusulas e riscos.
+Exportação do relatório (PDF ou Excel).
+Ferramentas e Tecnologias:
+Linguagem: Python.
+Bibliotecas Essenciais:
+Extração de texto: PyPDF2, pdfplumber.
+OCR: Pytesseract.
+NLP: SpaCy, NLTK.
+Visualização: Matplotlib, Seaborn para gráficos (opcional).
+Framework para Interface:
+Flask ou Django para uma aplicação web.
+PyQt para uma aplicação desktop.
+Fluxo de Funcionamento:
+O usuário faz upload do contrato.
+O robô processa o documento, extraindo o texto e dividindo-o em cláusulas.
+As cláusulas são comparadas com padrões pré-definidos para categorização.
+O robô analisa cláusulas problemáticas e gera um relatório com:
+Cláusulas destacadas.
+Termos de risco.
+Sugestões de melhorias.
+O relatório é exibido em uma interface e pode ser exportado.
